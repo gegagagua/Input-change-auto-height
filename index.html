@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auto Height</title>
+    <style>
+        .auto-height-indicator {
+            display: inline-block;
+            visibility: hidden;
+            display: none;
+        }
+
+        .auto-height-indicator-input {
+            width: 100%;
+            display: block;
+            height: 13px;
+            resize: none;
+            overflow:hidden;
+            width: 300px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <label class="control-label required" for="">შეტყობინება
+        <textarea class="auto-height-indicator-input" class="form-control">Lorem ipsum...</textarea>
+        <span class="auto-height-indicator"></span>
+    </label>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="./input-change-height.js"></script>
+</body>
+</html>
